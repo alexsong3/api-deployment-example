@@ -22,4 +22,4 @@ RUN cargo build --release --target x86_64-unknown-linux-musl
 FROM scratch
 COPY --from=builder /api-deployment-example/target/x86_64-unknown-linux-musl/release/api-deployment-example /api-deployment-example
 ENTRYPOINT ["/api-deployment-example"]
-EXPOSE 3000
+EXPOSE 8000
