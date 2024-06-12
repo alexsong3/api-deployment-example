@@ -25,7 +25,7 @@ async fn main() -> anyhow::Result<()> {
 
     sqlx::migrate!("./migrations").run(&pool).await?;
 
-    let addr: std::net::SocketAddr = std::net::SocketAddr::from(([0, 0, 0, 0], 3000));
+    let addr: std::net::SocketAddr = std::net::SocketAddr::from(([0, 0, 0, 0], 8000));
 
     println!("listening on {}", addr);
 
