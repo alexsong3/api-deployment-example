@@ -136,6 +136,6 @@ mod tests {
         assert_eq!(response.status(), StatusCode::OK);
 
         let body = hyper::body::to_bytes(response.into_body()).await.unwrap();
-        assert_eq!(&body[..], b"Let's Get Rusty!");
+        assert_eq!(&body[..], b"Let's Get Song!");
     }
 }
